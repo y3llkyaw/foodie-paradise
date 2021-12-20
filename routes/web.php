@@ -38,5 +38,5 @@ Route::post('/order/delete/{id}', [App\Http\Controllers\OrderController::class, 
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home/{type}', [App\Http\Controllers\HomeController::class, 'indexQ'])->name('home');
+Route::get('/home/{type}', [App\Http\Controllers\HomeController::class, 'indexQ'])->name('home.type');
 
