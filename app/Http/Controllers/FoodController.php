@@ -34,22 +34,18 @@ class FoodController extends Controller
                 'options'=> '',
 
             ]);
-
-            $data['image'] = request('image')->store('uploads','public');
-//        dd($data['image']);
-            $img=Image::make(public_path("storage/{$data['image']}"))->fit(1200,1200);
-            $img->save();
+            $imagePath = request('image')->store('foods','public');
+            $image =\Intervention\Image\Facades\Image::make(public_path("/uploads/".$imagePath))->fit(1000, 1000);
+            $image->save();
 
             Food::create([
                 'name'=> $data['name'],
                 'price'=>$data['price'],
+                'image'=>$imagePath,
                 'type'=>$data['type'],
                 'detail'=>$data['detail'],
-                'image'=>$data['image'],
             ]);
-//        Food::create($data);
             return redirect('/admin');
-
         }
     }
     public function editFoods($food){

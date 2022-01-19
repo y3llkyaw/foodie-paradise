@@ -30,7 +30,7 @@
         @foreach(\App\Models\Food::all() as $food)
            <div class="col-md-3">
                 <div class="card mb-4 box-shadow shadow">
-                    <img class="card-img-top" alt="" style="height: 100%; width: 100%; display: block;" src="/storage/{{$food->image}}" data-holder-rendered="true">
+                    <img class="card-img-top" alt="" style="height: 100%; width: 100%; display: block;" src="/uploads/{{$food->image}}" data-holder-rendered="true">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             <a name="edit" class="btn btn-danger btn-sm" href="/foods/edit/{{$food->id}}">

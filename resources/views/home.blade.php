@@ -124,7 +124,7 @@
                                                 <div class="modal-body">
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <img class="card-img-top mb-2" style="position: -webkit-sticky; /* Safari */position: sticky;top: 0;" alt="{{$food->name}}" style="height: 100%; width: 100%; display: block;" src="/storage/{{$food->image}}" data-holder-rendered="true">
+                                                            <img class="card-img-top mb-2" style="position: -webkit-sticky; /* Safari */position: sticky;top: 0;" alt="{{$food->name}}" style="height: 100%; width: 100%; display: block;" src="/uploads/{{$food->image}}" data-holder-rendered="true">
                                                         </div>
                                                         <div class="col-md-6">
                                                             <p style="height: 200px; overflow: auto; text-align:justify;">
@@ -273,7 +273,7 @@
 
         <div class="col-md-3">
             <div class="card mb-4 box-shadow shadow">
-                <img class="card-img-top" alt="" style="height: 100%; width: 100%; display: block;" src="/storage/{{$food->image}}" data-holder-rendered="true">
+                <img class="card-img-top" alt="" style="height: 100%; width: 100%; display: block;" src="/uploads/{{$food->image}}" data-holder-rendered="true">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <button id="" type="" onclick="add({{$food->id}},'{{$food->name}}',{{$food->price}});" name="add" class="btn btn-success btn-sm btn{{$food->id}}">
@@ -298,7 +298,7 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <img class="card-img-top mb-2" style="position: -webkit-sticky; /* Safari */position: sticky;top: 0;" alt="{{$food->name}}" style="height: 100%; width: 100%; display: block;" src="/storage/{{$food->image}}" data-holder-rendered="true">
+                                                    <img class="card-img-top mb-2" style="position: -webkit-sticky; /* Safari */position: sticky;top: 0;" alt="{{$food->name}}" style="height: 100%; width: 100%; display: block;" src="/uploads/{{$food->image}}" data-holder-rendered="true">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <p style="height: 200px; overflow: auto; text-align:justify;">
